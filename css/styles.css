@@ -1,0 +1,86 @@
+:root{
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-text-color:#2196F3;
+    --header-footer-bg-color:#2F303A;
+    --hero-text-color:#FFFFFF;
+    --page-bg-color:#FFFFFF;
+
+}
+
+/* Общие стили для страницы */
+.page {
+background-color:var(--page-bg-color);
+color:var(--primary-text-color);
+}
+.title {
+    color:var(--title-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*Главная навигационная панель страницы */
+
+
+.logo{
+text-decoration: none;
+}
+
+.firstp-logo{
+    color:var(--accent-text-color);
+}
+.site-nav .secondp-logo {
+    color:#000000;
+}
+
+.site-nav .link{
+    color:var(--title-text-color);
+}
+
+.site-nav .link:hover{
+color:var(--accent-text-color);
+}
+.site-nav .link:focus{
+    color:var(--accent-text-color);
+}
+.site-nav .tel{
+    color:var(--primary-text-color);
+}
+.hero{
+    background-color: var(--header-footer-bg-color);
+    color: var(--hero-text-color);
+    height: 600px;   }
+
+.hero-button {
+    color:var(--hero-text-color);
+    background-color:var(--accent-text-color);
+    width: 200px;
+    height: 50px;}
+
+/* Секция1 заказа услуги */
+/* Секция2 преимущества компании */
+/* Секция3 чем занимается компания в картинках */
+/* Секция4 Команда */
+.team {
+    background-color: #F5F4FA;
+}
+/* Секция5 Футер адрес контакты */
+.footer {
+    background-color: var(--header-footer-bg-color);
+    color:var(--hero-text-color);
+    }
+.footer .secondp-logo {
+        color:#FFFFFF;
+    }
+.footer .link{
+    color:var(--hero-text-color);
+    
+}
+
+/* цвет заголовков color: #212121 */
