@@ -2,83 +2,226 @@
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-text-color:#2196F3;
-    --header-footer-bg-color:#2F303A;
     --hero-text-color:#FFFFFF;
-    --page-bg-color:#FFFFFF;
-
+    --site-nav-bg-color:#FFFFFF;
+    --page-bg-color:#E5E5E5;
+    --header-footer-bg-color:#2F303A;
+    --team-bg-color:#F5F4FA;
+    --main-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
+    
 }
 
 /* Общие стили для страницы */
 .page {
 background-color:var(--page-bg-color);
 color:var(--primary-text-color);
+font-family: var(--main-font)
 }
 .title {
-    color:var(--title-text-color);
+color: var(--title-text-color);
 }
-
+.main-title{
+color: var(--title-text-color);
+font-weight: 700px;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
 .list {
     list-style: none;
+    text-decoration: none;
 }
 
 .link {
     text-decoration: none;
 }
-
+.description {
+font-size: 16px;
+line-height: 1.2;
+font-weight:400px;
+text-align: center;
+letter-spacing: 0.03em;
+}
 /*Главная навигационная панель страницы */
-
+.site-nav{
+    background-color: var(--site-nav-bg-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,1;
+    letter-spacing: 0.02em;
+}
 
 .logo{
 text-decoration: none;
+color:var(--accent-text-color);
+font-family: var(--logo-font);
+font-weight: 700px;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
 }
 
-.firstp-logo{
-    color:var(--accent-text-color);
-}
 .site-nav .secondp-logo {
     color:#000000;
-}
+    }
 
 .site-nav .link{
     color:var(--title-text-color);
 }
 
-.site-nav .link:hover{
+.site-nav .link:hover,
+.site-nav .link:focus
+{
 color:var(--accent-text-color);
 }
-.site-nav .link:focus{
-    color:var(--accent-text-color);
-}
-.site-nav .tel{
+.site-nav .link .current {
+    color:var(--accent-text-color);}
+
+.header .contacts {
+    background-color: var(--site-nav-bg-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,1;
+    letter-spacing: 0.02em;
+    }
+
+.contacts .link{
     color:var(--primary-text-color);
 }
+.contacts .link:hover,
+.contacts .link:focus{
+    color:var(--accent-text-color)
+}
+/*  заказ услуги */
 .hero{
     background-color: var(--header-footer-bg-color);
     color: var(--hero-text-color);
-    height: 600px;   }
+    font-weight: 900px;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    }
 
 .hero-button {
+    font-family: var(--main-font);
     color:var(--hero-text-color);
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     background-color:var(--accent-text-color);
-    width: 200px;
-    height: 50px;}
+    cursor:pointer;}
+    
 
-/* Секция1 заказа услуги */
-/* Секция2 преимущества компании */
-/* Секция3 чем занимается компания в картинках */
-/* Секция4 Команда */
-.team {
-    background-color: #F5F4FA;
+.hero-button:hover,
+.hero-button:focus  {
+    background-color:#188CE8;
 }
-/* Секция5 Футер адрес контакты */
+/* преимущества компании */
+.benefits{
+font-weight:700px;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.benefits-description{
+font-weight: 400px;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+text-transform: none;}
+/* типы создаваемых продуктов */
+
+
+/* Команда */
+.team {
+    background-color:var(--team-bg-color);
+}
+.team .title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.team .description{
+font-weight: 400px;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+/*  Панель фильтров примеров работ студии */
+
+.portfolio-button{
+font-family:var(--main-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 4.4;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+background-color:var(--team-bg-color);
+cursor:pointer;
+border: none;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus{
+   background-color: var(--accent-text-color);
+   color:var(--hero-text-color)
+}
+
+/* Примеры работ: фото проекта-название проекта -тип проекта*/
+
+.portfolio-examples-title{
+font-weight: 700px;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color:var(--title-text-color);
+}
+.portfolio-examples-description{
+font-weight: 400px;
+line-height: 30px;
+letter-spacing: 0.03em;
+}
+
+/* Футер адрес контакты */
 .footer {
     background-color: var(--header-footer-bg-color);
     color:var(--hero-text-color);
-    }
+}
+.footer .contacts{
+font-family: var(--main-font);
+font-style: normal;
+font: weight 400px;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+}
 .footer .secondp-logo {
         color:#FFFFFF;
     }
 .footer .link{
     color:var(--hero-text-color);
     }
-
+    .footer .link:hover,
+    .footer .link:focus {
+        color:var(--accent-text-color)
+    }
+.footer .phone{
+    color:rgba(255, 255, 255, 0.6);
+}
+.footer .emails{
+    color:rgba(255, 255, 255, 0.6);
+}
