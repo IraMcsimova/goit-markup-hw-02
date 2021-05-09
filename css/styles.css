@@ -5,7 +5,7 @@
     --hero-text-color:#FFFFFF;
     --site-nav-bg-color:#FFFFFF;
     --page-bg-color:#E5E5E5;
-    --header-footer-bg-color:#2F303A;
+    --hero-footer-bg-color:#2F303A;
     --team-bg-color:#F5F4FA;
     --main-font: "Roboto", sans-serif;
     --logo-font: "Raleway", sans-serif;
@@ -14,7 +14,6 @@
 
 /* Общие стили для страницы */
 .page {
-background-color:var(--page-bg-color);
 color:var(--primary-text-color);
 font-family: var(--main-font)
 }
@@ -23,7 +22,7 @@ color: var(--title-text-color);
 }
 .main-title{
 color: var(--title-text-color);
-font-weight: 700px;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
@@ -40,7 +39,7 @@ letter-spacing: 0.03em;
 .description {
 font-size: 16px;
 line-height: 1.2;
-font-weight:400px;
+font-weight:400;
 text-align: center;
 letter-spacing: 0.03em;
 }
@@ -57,7 +56,7 @@ letter-spacing: 0.03em;
 text-decoration: none;
 color:var(--accent-text-color);
 font-family: var(--logo-font);
-font-weight: 700px;
+font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
 letter-spacing: 0.03em;
@@ -96,20 +95,22 @@ color:var(--accent-text-color);
 }
 /*  заказ услуги */
 .hero{
-    background-color: var(--header-footer-bg-color);
-    color: var(--hero-text-color);
-    font-weight: 900px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    }
-
-.hero-button {
+    color:var(--hero-text-color);
+    background-color:var(--hero-footer-bg-color);
+}
+    
+    .hero-button {
     font-family: var(--main-font);
     color:var(--hero-text-color);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     display: flex;
@@ -125,15 +126,21 @@ color:var(--accent-text-color);
     background-color:#188CE8;
 }
 /* преимущества компании */
-.benefits{
-font-weight:700px;
+
+.benefits-header,
+.portfolio-examples-header,
+.portfolio-header{
+    color:transparent;
+}
+.benefits .title{
+    font-weight:700;
 font-size: 14px;
-line-height: 1.2;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 .benefits-description{
-font-weight: 400px;
+font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
@@ -153,7 +160,7 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 .team .description{
-font-weight: 400px;
+font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
@@ -184,27 +191,28 @@ border: none;
 /* Примеры работ: фото проекта-название проекта -тип проекта*/
 
 .portfolio-examples-title{
-font-weight: 700px;
+font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color:var(--title-text-color);
 }
 .portfolio-examples-description{
-font-weight: 400px;
+font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.03em;
+color:var(--primary-text-color);
 }
 
 /* Футер адрес контакты */
 .footer {
-    background-color: var(--header-footer-bg-color);
+    background-color: var(--hero-footer-bg-color);
     color:var(--hero-text-color);
 }
 .footer .contacts{
 font-family: var(--main-font);
 font-style: normal;
-font: weight 400px;
+font: weight 400;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
@@ -219,9 +227,6 @@ letter-spacing: 0.03em;
     .footer .link:focus {
         color:var(--accent-text-color)
     }
-.footer .phone{
-    color:rgba(255, 255, 255, 0.6);
-}
-.footer .emails{
+.footer .write-or-call{
     color:rgba(255, 255, 255, 0.6);
 }
